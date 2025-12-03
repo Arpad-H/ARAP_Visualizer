@@ -1,0 +1,11 @@
+﻿{
+  "name": "arap-visualizer",
+  "version": "1.0",
+  "dependencies": [
+    "glfw3",
+    "glew",
+    "imgui",
+    "assimp",
+    "stb"
+  ]
+}
