@@ -6,3 +6,31 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# CLion / IntelliJ
+.idea/
+cmake-build-*/
+
+# CMake build dirs
+build/
+build-*/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# vcpkg build outputs (important!)
+vcpkg/buildtrees/
+vcpkg/packages/
+vcpkg/downloads/
+vcpkg/installed/
+
+# vcpkg artifacts
+vcpkg/.vs/
+vcpkg/vcpkg.exe
+vcpkg/vcpkg
+
+# OS junk
+.DS_Store
+Thumbs.db
