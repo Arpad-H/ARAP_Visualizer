@@ -11,7 +11,35 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB_RECURSE SRC_FILES src/*.cpp)
 file(GLOB_RECURSE HEADER_FILES include/*.h include/*.hpp)
 
-add_executable(${PROJECT_NAME} ${SRC_FILES} ${HEADER_FILES})
+add_executable(${PROJECT_NAME} ${SRC_FILES} ${HEADER_FILES}
+        src/Application.cpp
+        src/Application.h
+        src/BaseModel.cpp
+        src/BaseModel.h
+        src/Camera.cpp
+        src/Camera.h
+        src/Vector.cpp
+        src/Vector.h
+        src/Matrix.cpp
+        src/Matrix.h
+        src/GameObject.cpp
+        src/GameObject.h
+        src/Model.cpp
+        src/Model.h
+        src/AABB.cpp
+        src/AABB.h
+        src/Texture.cpp
+        src/Texture.h
+        src/IndexBuffer.cpp
+        src/IndexBuffer.h
+        src/VertexBuffer.cpp
+        src/VertexBuffer.h
+        src/Color.cpp
+        src/Color.h
+        src/PhongShader.cpp
+        src/PhongShader.h
+        src/BaseShader.cpp
+        src/BaseShader.h)
 
 # dependencies (vcpkg)
 find_package(glfw3 CONFIG REQUIRED)
